@@ -159,3 +159,11 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 
 "------------------------------------------------------------
+"
+syntax enable
+set background=dark
+colorscheme solarized
+
+autocmd vimenter * NERDTree
+map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
