@@ -160,9 +160,7 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 "------------------------------------------------------------
 "
-syntax enable
-set background=dark
-colorscheme solarized
+colorscheme darkblue
 
 autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
